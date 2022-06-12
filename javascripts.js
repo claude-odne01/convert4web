@@ -17,14 +17,14 @@ function myfun() {
      johnbmi = Number.parseFloat(johnbmi).toFixed(2);
      lucbmi = Number.parseFloat(lucbmi).toFixed(2);
      
-     bmioutput.innerHTML = `Johns BMI: ${johnbmi} bmi - Lucas' BMI: ${lucbmi} bmi - Lucas' BMI is higher than Johns BMI: That statement is ${ ( johnbmi.value > lucbmi.value )}`;
+     bmioutput.innerHTML = `Johns BMI: ${johnbmi} bmi - Lucas' BMI: ${lucbmi} bmi - Lucas' BMI is higher than Johns BMI: That statement is ${(lucbmi > johnbmi )}`;
      
      // *********** Console Output *************************************
      if( johnbmi > lucbmi ) {
-          console.log(`Johns BMI ( ${johnmbi} ) is higher than Lucas' BMI ( ${lucbmi} )`);
+          console.log(`Johns BMI ( ${johnbmi} ) is higher than Lucas' BMI ( ${lucbmi} )`);
      }
      else {
-          console.log(`Lucas' BMI ( ${lucmbi} ) is higher than Johns BMI ( ${johnbmi} )`);
+          console.log(`Lucas' BMI ( ${lucbmi} ) is higher than Johns BMI ( ${johnbmi} )`);
      }
 }
 // *************************************************************************
@@ -36,7 +36,7 @@ function myfun1() {
      let out1 = document.getElementById('Tempoutput');
      
      let celsi = 5 / 9 * (temp.value - 32) ;
-     let farnh = temp.value * (9 / 5) + 32  ;
+     let farnh = temp.value * (9 / 5) + 32;
      
      celsi = Number.parseFloat(celsi).toFixed(1);
      farnh = Number.parseFloat(farnh).toFixed(1);
